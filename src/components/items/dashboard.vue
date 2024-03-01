@@ -2,14 +2,19 @@
     <v-toolbar elevation="20" color="#000000" :height="120">
         <v-container fluid ma-0 pa-0 fill-height >
 
-          <v-card-actions  color="#ffff" class="flex justify-center">
+          <div class="stars"></div>
+          <div class="shooting-stars"></div>
+          <div class="stars2"></div>
+          <div class="stars"></div>
+          <div class="shooting-stars"></div>
 
+          <v-card-actions color="#ffff" class="flex justify-center">
             <v-col min-width="50px"  cols="3">
                 <input-custom v-model="this.search" v-on:change="send_dados_external" label="Digite aqui o que você procura..." type="search" ></input-custom>
             </v-col>
             <v-app-bar-nav-icon class="hidden-md-and-up"></v-app-bar-nav-icon>
 
-            <v-btn class="hidden-sm-and-down" icon><v-icon color="red">mdi-heart</v-icon></v-btn>
+            <v-btn class="hidden-sm-and-down" icon><v-icon>mdi-heart</v-icon></v-btn>
 
             <v-btn class="hidden-sm-and-down" icon><v-icon>mdi-cart</v-icon></v-btn>
 
@@ -53,11 +58,15 @@
             </div>
           </v-card-actions>
 
-          <div class="stars"></div>
-          <div class="shooting-stars"></div>
-          <div class="stars2"></div>
-          <div class="stars"></div>
-          <div class="shooting-stars"></div>
+          <v-card-actions color="#ffff" class="flex justify-center">
+            <div class="hidden-sm-and-down" >
+              <v-btn>Incensos</v-btn>
+              <v-btn>Ervas</v-btn>
+              <v-btn>Estatuas</v-btn>
+              <v-btn>Livros</v-btn>
+              <v-btn>Consultas</v-btn>
+            </div>
+          </v-card-actions>
 
 
         </v-container>
@@ -84,24 +93,6 @@ export default {
 
 <style>
     
-.container {
-  display: block;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background: #020107;
-}
-.container .text {
-  color: #FFF;
-  position: absolute;
-  top: 50%;
-  right: 50%;
-  margin: -10px -75px 0 0;
-  font-size: 20px;
-  font-family: sans-serif;
-  font-weight: bold;
-}
-
 .stars {
   z-index: 10;
   width: 1px;
