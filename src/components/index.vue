@@ -1,4 +1,15 @@
 <template>
-  <h1>teste2</h1>
+  <dash-board></dash-board>
   <router-view></router-view>
 </template>
+
+
+<script>
+import { RouterView } from 'vue-router';
+
+
+
+
+
+</script>
+
